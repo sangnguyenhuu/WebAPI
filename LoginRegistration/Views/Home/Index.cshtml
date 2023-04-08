@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@if (Session["UserID"] != null)
+{
+    <div>
+        Chào mừng bạn : <a href="#">@Session["UserName"]</a><br />
+        <a href="/Register/Logout">Đăng xuất</a>
+    </div>
+}
+<div class="jumbotron">
+    <h1>Chào mừng bạn @Session["UserName"] đến với Trang web của chúng tôi</h1>
+    
+</div>
+
